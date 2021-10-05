@@ -14,6 +14,9 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"],
     },
     devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
         https: true,
         host: "0.0.0.0",
         port: 8080, //port that we're using for local host (localhost:8080)
